@@ -19,4 +19,16 @@
 
 ## 20-10-28
 
+- [BOJ 1000](https://www.acmicpc.net/problem/1000) **덧셈** <br/>
+
+아주 간단한 문제지만, 한 줄에 숫자 여러개 받는 방법을 몰랐습니다. <br/>
+`split()` 함수를 이용하면 `()` 사이에 값을 구분자로 하여 문자열로 나누어 줍니다. <br/>
+
+```python
+# split 함수 예시
+>>> a = "Life is too short"
+>>> a.split()
+['Life', 'is', 'too', 'short']
+```
+
 ---
