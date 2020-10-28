@@ -19,7 +19,7 @@
 
 ## 20-10-28
 
-- [BOJ 1000](https://www.acmicpc.net/problem/1000) <span style="color:red">**덧셈**</span> <br/>
+- [BOJ 1000](https://www.acmicpc.net/problem/1000) **덧셈** <br/>
 
 아주 간단한 문제지만, 한 줄에 숫자 여러개 받는 방법을 몰랐습니다. <br/>
 `split()` 함수를 이용하면 `()` 사이에 값을 구분자로 하여 문자열로 나누어 줍니다. <br/>
@@ -32,6 +32,17 @@
 ```
 
 - [BOJ 1001](https://www.acmicpc.net/problem/1001) **뺄셈** <br/>
-  [BOJ 1000](https://www.acmicpc.net/problem/1000) 와 동일한 문제지만 `int()`로 바로 감싸서 풀었습니다.
+
+[BOJ 1000](https://www.acmicpc.net/problem/1000) 와 동일한 문제지만 `int()`로 바로 감싸서 풀었습니다.
+
+- [BOJ 1271](https://www.acmicpc.net/problem/1271) **엄청난 부자2** <br/>
+
+몫과 나머지의 연산자만 사용하면 아주 간단한 문제였다. <br/>
+다른 분의 코드를 보니, `map()`함수를 사용하면 더 간단하게 숫자를 받을 수 있단 걸 알았다. <br/>
+
+```python
+# map을 이용한 숫자 입력 예제
+n, m = map(int, input().split())
+```
 
 ---
