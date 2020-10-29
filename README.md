@@ -48,6 +48,16 @@ print(int(input(), 16))
 
 - [BOJ 2557](https://www.acmicpc.net/problem/2557) **Hello World** <br/>
 
+- [BOJ 2558](https://www.acmicpc.net/problem/2558) **A+B-2** <br/>
+
+- [BOJ 2845](https://www.acmicpc.net/problem/2845) **파티가끝나고난뒤에** <br/>
+
+간단한 문제이다. `map`과 `list comprehension`에 익숙해지기 위해 사용해서 풀어봤다.<br/>
+
+- [BOJ 2914](https://www.acmicpc.net/problem/2914) **저작권** <br/>
+
+`math` 라이브러리를 `import`해서 `ceil`이라는 올림 함수를 사용해봤다.
+
 ---
 
 ## 20-10-28
