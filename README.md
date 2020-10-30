@@ -17,6 +17,62 @@
 
 ---
 
+## 20-10-30
+
+- [BOJ 3003](https://www.acmicpc.net/problem/3003) **킹, 퀸, 룩, 비숍, 나이트, 폰** <br/>
+
+절댓값을 적용해야 한다고 생각했지만, 아니었다.<br/>
+`list comprehension`에 리스트를 2개 넣어보려고 `zip` 내장함수를 사용해봤다.<br/>
+`zip`은 동일한 개수의 자료형을 묶어주는 역할을 하는 함수이다.<br/>
+
+- [BOJ 3046](https://www.acmicpc.net/problem/3046) **R2** <br/>
+
+- [BOJ 5337](https://www.acmicpc.net/problem/5337) **웰컴** <br/>
+
+여러 줄에 걸쳐 출력할 수 있다는 걸 첨 알았다. <br/>
+
+```python
+print(""".  .   .
+|  | _ | _. _ ._ _  _
+|/\|(/.|(_.(_)[ | )(/.""")
+```
+
+- [BOJ 5338](https://www.acmicpc.net/problem/5338) **마이크로소프트 로고** <br/>
+
+- [BOJ 5339](https://www.acmicpc.net/problem/5339) **콜센터** <br/>
+
+- [BOJ 5522](https://www.acmicpc.net/problem/5522) **카드게임** <br/>
+
+리스트를 선언해서 풀었는데, 간단하게 변수 하나에 `input`을 더해주는 방식으로도 풀 수 있다. <br/>
+
+- [BOJ 5554](https://www.acmicpc.net/problem/5554) **심부름 가는 길** <br/>
+
+- [BOJ 6749](https://www.acmicpc.net/problem/6749) **Next in line** <br/>
+
+- [BOJ 7287](https://www.acmicpc.net/problem/7287) **등록** <br/>
+
+- [BOJ 8370](https://www.acmicpc.net/problem/8370) **Plane** <br/>
+
+- [BOJ 8393](https://www.acmicpc.net/problem/8393) **합** <br/>
+
+- [BOJ 8437](https://www.acmicpc.net/problem/8437) **julka** <br/>
+
+- [BOJ 9654](https://www.acmicpc.net/problem/9654) **나무함대 데이터** <br/>
+
+`format`과 함께 출력 형식을 제한한 하는 코드를 써봤다.<br/>
+
+```python
+>> print('Python is [{:15}]'.format('good'))
+python is [good           ]
+```
+
+- [BOJ 10170](https://www.acmicpc.net/problem/10170) **NFC West vs North** <br/>
+  출력 형식은 어차피 나중에 구글링하면 되니까.. 그냥 `print`문으로 간단하게 처리했다.<br/>
+
+- [BOJ 10171](https://www.acmicpc.net/problem/10171) **고양이** <br/>
+
+---
+
 ## 20-10-29
 
 - [BOJ 1550](https://www.acmicpc.net/problem/1550) **16진수** <br/>
