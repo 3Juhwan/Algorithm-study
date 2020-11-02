@@ -17,8 +17,72 @@
 
 **20-11-01** <br/>
 교내 코딩 대회를 C언어로 응시하기로 했다. <br/>
-1차 예선을 너무 못봤기 때문에😥<br/>
+1차 예선을 너무 못봤기 때문에😥 -> 아예 떨어졌기 때문에... 계속 python 공부를 할 것이다. 11-02 <br/>
 당분간 C언어로 조금 높은 단계의 문제를 풀고 python으론 가장 낮은 것부터 차례대로 풀 것이다.<br/>
+
+**20-11-02** <br/>
+한 주 단위로 틀린/수정한 문제 다시 풀기😊<br/>
+브론즈 5는 나에게 쉬워서 오늘부터 브론즈 2로 난이도를 높여서 진행한다<br/>
+
+---
+
+## 20-11-02
+
+- [BOJ 1075](https://www.acmicpc.net/problem/1075) **나누기** <br/>
+
+나는 숫자로 처리했는데, 문자열로 처리하면 더 간단하게 풀 수 있다. <br/>
+문자열 처리가 간단해서 파이썬 쓴다는 말을 들은 것 같다. <br/>
+
+```python
+N = input()
+F = int(input())
+
+N = int(N[:-2]+'00')
+
+while True:
+    if N % F == 0:
+        break
+    N += 1
+
+print(str(N)[-2:])
+```
+
+- [BOJ 1076](https://www.acmicpc.net/problem/1076) **저항** <br/>
+
+어렵게 풀었다는 생각이 많이 든다... 채점하는 데에 120초나 걸리다니..🤣<br/>
+`dictionary`로 데이터를 저장하고 풀었는데, 알고보니 데이터에 규칙이 있어서 `list` 하나로도 간단하게 풀 수 있다. <br/>
+아직 `python` 으로 문제푸는 스킬이 부족하단 생각이 많이 든다.<br/>
+
+```python
+color = ['black', 'brown', 'red',
+'orange', 'yellow', 'green', 'blue', 'violet', 'grey', 'white']
+f = color.index(input())
+s = color.index(input())
+t = color.index(input())
+r = int(str(f) + str(s)) * (10 ** t)
+print(r)
+```
+
+- [BOJ 1159](https://www.acmicpc.net/problem/1159) **농구경기** <br/>
+
+문자열 슬라이싱으로 괜찮게 풀었다... 고 생각했지만, <br/>
+`counter` 라이브러리를 사용하면 쉽게 풀 수 있단 걸 알았다.😥 그래도 꽤 괜찮게 풀었다. <br/>
+
+```python
+from collections import Counter
+Counter('hello world')
+# Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
+```
+
+- [BOJ 10757](https://www.acmicpc.net/problem/10757) **We love kriii** <br/>
+
+- [BOJ 10718](https://www.acmicpc.net/problem/10718) **큰 수 A+B** <br/>
+
+- [BOJ 10869](https://www.acmicpc.net/problem/10869) **사칙연산** <br/>
+
+- [BOJ 10926](https://www.acmicpc.net/problem/10926) **사칙연산** <br/>
+
+- [BOJ 10998](https://www.acmicpc.net/problem/10998) **AxB** <br/>
 
 ---
 
