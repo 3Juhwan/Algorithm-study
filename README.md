@@ -26,6 +26,58 @@
 
 ---
 
+## 20-11-04
+
+- [BOJ 3449](https://www.acmicpc.net/problem/3449) **해밍거리** <br/>
+
+두 문자열을 비교하는 간단한 문제다. 이전에 배운 `zip` 함수를 이용했다. <br/>
+
+- [BOJ 3183](https://www.acmicpc.net/problem/3183) **Dates** <br/>
+
+날짜와 관련된 간단한 문제다. 함수를 만들어 풀었다. <br/>
+
+- [BOJ 3059](https://www.acmicpc.net/problem/3059) **등장하지 않는 문자의 합** <br/>
+
+아스키코드 관련 문자열 문제다. 아스키코드 함수 `chr` 과 `ord` 를 알게 됐다.<br/>
+
+```python
+>>> ord('문자') : 아스키코드를 반환
+>>> chr('숫자') : 문자 반환
+```
+
+- [BOJ 2966](https://www.acmicpc.net/problem/2966) **찍기** <br/>
+
+반복문으로 처리하기 위해 각각의 정보를 `dictionary`로 받았는데,,, 코드가 많이 복잡해졌다.🤣<br/>
+`dictionary`보단 `array` 위주로 문제 풀어야 겠다. <br/>
+[Clean Code](https://alpyrithm.tistory.com/125)
+
+- [BOJ 2857](https://www.acmicpc.net/problem/2857) **FBI** <br/>
+
+이 문제를 풀 때, 사용할 수 있는 함수는 `count` `find` 정도 같다. 물론, 난 사용하지 않았다.
+
+```python
+>>> a = "Python is the best choice"
+>>> a.find('b')
+14
+>>> a.find('k')
+-1
+>>> a.count('e')
+33
+```
+
+- [BOJ 1259](https://www.acmicpc.net/problem/1259) **팰린드롬수** <br/>
+
+문자열 슬라이싱을 사용하면 매우 간단하게 풀리는 문제였다.<br/>
+나는 문자열 슬라이싱에 낯설어서 어렵게 풀었다.
+
+```python
+>>> a = 'Hello'
+>>> print(a[::-1])
+olleH
+```
+
+---
+
 ## 20-11-03
 
 - [BOJ 1173](https://www.acmicpc.net/problem/1173) **운동** <br/>
