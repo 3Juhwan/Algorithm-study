@@ -24,6 +24,13 @@
 
 ---
 
+## 21-02-10
+
+- [BOJ 2805](https://www.acmicpc.net/problem/2805) **나무 자르기** <br/>
+이진 탐색을 이용하면 쉽게 풀리는 문제였다.
+
+---
+
 ## 20-12-10
 
 - [BOJ 2609](https://www.acmicpc.net/problem/2609) **최대공약수와 최소공배수** <br/>
