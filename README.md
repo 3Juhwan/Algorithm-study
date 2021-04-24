@@ -29,21 +29,21 @@
 
 ## 21-04-24
 
-- [1이 될 때까지](thisiscodingtest/3-4.py)  
+- [1이 될 때까지](thiscodingtest/3-4.py)  
 
 시간 복잡도: O(N)  
 정당성: 나눌 수 있으면 무조건 나눠야 한다. 1로 빼는 것보다 K로 나누면 기하급수적으로 수가 감소한다. 
 
-- [숫자 카드 게임](thisiscodingtest/3-3.py)  
+- [숫자 카드 게임](thiscodingtest/3-3.py)  
 
 시간 복잡도: O(N^2)  
 아이디어: 각 행마다 가장 작은 수를 뽑고, 그 중 가장 큰 수를 출력 
 
-- [큰 수의 법칙](thisiscodingtest/3-2.py)  
+- [큰 수의 법칙](thiscodingtest/3-2.py)  
 
 시간 복잡도: O(N Log N)  
 
-- [거스름돈](thisiscodingtest/3-1.py)  
+- [거스름돈](thiscodingtest/3-1.py)  
 
 시간 복잡도: O(K), K: 화폐 종류  
 정당성: 화폐 단위가 모두 약수/배수 관계에 있어야 성립한다. 
