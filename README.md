@@ -7,7 +7,7 @@
 
   
 
-백준 닉네임 : **`3Juhwan`**<br/>
+백준 닉네임 : **`3Juhwan`**  
 
 ### 메모
 
@@ -31,17 +31,17 @@
 
 - [BOJ 1927](https://www.acmicpc.net/problem/1927) **최소 힙**
 
-힙을 다뤄본적이 없어서 풀어봤다.  
+힙을 다뤄본 적이 없어서 풀어봤다.  
 
 heapq를 사용해서 풀었는데, 시간 초과 떠서 sys.stdin.readline()도 사용했다.  
 
 - [BOJ 1654](https://www.acmicpc.net/problem/1654) **랜선 자르기**
 
-이전엔 풀지 못했던 문제를 건들여봤다.  
+이전엔 풀지 못했던 문제를 건드려봤다.  
 
-문제를 보자마자 이진탐색으로 풀어야 된다고 생각했다.  
+문제를 보자마자 이진 탐색으로 풀어야 한다고 생각했다.  
 
-입력의 범위가 말도 안되게 컸기 때문! (랜선의 길이는 2^31-1보다 작거나 같은 자연수이다)  
+입력의 범위가 말도 안 되게 컸기 때문! (랜선의 길이는 2^31-1보다 작거나 같은 자연수이다)  
 
 부족했던 점은,,  
 
@@ -53,13 +53,13 @@ left를 0으로 잡아서 mid가 0이 되는 경우를 방지하지 못했다.
 
 DP 문제라지만 아무리 봐도 DFS도 사용해서 풀어야 할 것 같았다.  
 
-계속 반복문을 이용한 보텀업 방식으로 DP를 풀어왔기 때문에 이번에도 시도했지만, 번번히 실패했다.  
+계속 반복문을 이용한 보텀업 방식으로 DP를 풀어왔기 때문에 이번에도 시도했지만, 번번이 실패했다.  
 
 아예 DFS만으로 풀어서 제출했지만, 시간 초과가 떴다.  
 
 다른 분 코드를 참고해보니, 재귀를 이용해서 dfs와 탑다운 DP로 푸는 거였다.  
 
-python에서 재귀는 제한이 있어서 사용하지 않으려 하는데, 완전히 배제하진 말아야 겠다.  
+python에서 재귀는 제한이 있어서 사용하지 않으려 하는데, 완전히 배제하진 말아야겠다.  
 
 ---
 
@@ -73,7 +73,7 @@ python에서 재귀는 제한이 있어서 사용하지 않으려 하는데, 완
 
 > 1 -> 21 -> 321 -> 2321
 
-| N/첫자리 수 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| N/첫 자리 수 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |---|:---:|---|
 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | 2 | 1 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 1 |
@@ -84,7 +84,7 @@ python에서 재귀는 제한이 있어서 사용하지 않으려 하는데, 완
 
 1로 갱신될 때, 이전 0과 2의 값을 더하는데 0의 값을 제대로! 갱신했어야 한다.  
 
-9로 갱신될 땐, 계단 수가 8 밖에 없으므로 이전 8의 값을 그대로 더한다.  
+9로 갱신될 땐, 계단 수가 8밖에 없으므로 이전 8의 값을 그대로 더한다.  
 
 - [BOJ 11048](https://www.acmicpc.net/problem/11048) **이동하기**
 
@@ -116,7 +116,7 @@ for i in range(3):
 
 - [BOJ 11057](https://www.acmicpc.net/problem/11057) **오르막 수**
 
-DP 문제인데, 아직 적응이 안된 것 같다.  
+DP 문제인데, 아직 적응이 안 된 것 같다.  
 
 뭔가 반복되는 느낌은 오는데, 점화식을 세우는 건 여전히 어려웠다.  
 
@@ -130,7 +130,7 @@ DP 문제인데, 아직 적응이 안된 것 같다.
 | 2 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 |
 | 3 | 55 | 45 | 36 | 28 | 21 | 15 | 10 | 6 | 3 | 1 |
 
-10칸 짜리 dp 리스트를 만들어서 갱신해주는 방식으로 풀었다.   
+10칸짜리 dp 리스트를 만들어서 갱신해주는 방식으로 풀었다.   
 
 - [BOJ 1463](https://www.acmicpc.net/problem/1463) **1로 만들기**
 
@@ -140,11 +140,11 @@ DP 문제인데, 아직 적응이 안된 것 같다.
 
 엄청 간단한 그리디 문제다.  
 
-데이터를 입력 받아서 sort로 오름차순 정렬하면 끝나는 문제인데, 근데 6번이나 시간초과가 떴다.  
+데이터를 입력받아서 sort로 오름차순 정렬하면 끝나는 문제인데, 근데 6번이나 시간 초과가 떴다.  
 
-계수 정렬로도 풀었지만, 도저히 시간초과를 해결할 수 없어서, 그냥 PyPy3로 제출했다.   
+계수 정렬로도 풀었지만, 도저히 시간 초과를 해결할 수 없어서, 그냥 PyPy3로 제출했다.   
 
-PyPy3가 Python3보다 빠른 경향이 있다고 한다.  
+PyPy3가 Python3 보다 빠른 경향이 있다고 한다.  
 
 ---
 
@@ -166,7 +166,7 @@ PyPy3가 Python3보다 빠른 경향이 있다고 한다.
 
 DP 문제라고 해서 풀었는데, 단순히 규칙 찾으면 풀리는 문제였다.  
 
-앞으론 DP 문제집을 찾아서 풀어야 겠다..  
+앞으론 DP 문제집을 찾아서 풀어야겠다..  
 
 - [BOJ 9095](https://www.acmicpc.net/problem/9095) **1, 2, 3 더하기**
 
@@ -178,7 +178,7 @@ N = (N-1) `+ 1`
 N = (N-2) `+ 2`  
 N = (N-3) `+ 3`  
 
-이고, N-1, N-2, N-3이 어떻게 만들어지는 지는 신경 쓰지 않아도 된다.  
+이고, N-1, N-2, N-3이 어떻게 만들어지는지는 신경 쓰지 않아도 된다.  
 
 따라서, N번째 수는 N-1번째 수와 N-2번째 수와 N-3번째 수를 더하면 된다.  
 
@@ -200,7 +200,7 @@ d[i] = d[i-k] + 1 (k는 화폐 단위)
 
 **부족한 점:**  
 
-> if문이 여러개 있어서 코드가 지저분하고 이해하기 어렵다..  
+> if문이 여러 개 있어서 코드가 지저분하고 이해하기 어렵다..  
 
 정답 코드에선 인덱스를 범위가 넘어가지 않게 지정해줘서 if문을 걸어줄 필요가 없다.  
 
@@ -220,7 +220,7 @@ d[i] = d[i-k] + 1 (k는 화폐 단위)
 
 계수 정렬을 사용해서 풀었다.  
 
-리스트 크기 정하는 게 중요한데, 숫자의 범위는 (-10,000,000 ≤ N ≤ 10,000,000) 이므로 리스트의 크기를 20,000,000로 지정해서 -10,000,000부터 -1까지는 arr[10,000,001]부터 arr[20,000,000]까지 저장되도록 했다.  
+리스트 크기 정하는 게 중요한데, 숫자의 범위는 (-10,000,000 ≤ N ≤ 10,000,000) 이므로 리스트의 크기를 20,000,000으로 지정해서 -10,000,000부터 -1까지는 arr[10,000,001]부터 arr[20,000,000]까지 저장되도록 했다.  
 
 ---
 
@@ -232,7 +232,7 @@ d[i] = d[i-k] + 1 (k는 화폐 단위)
 
 보텀업 방식으로 풀어보려 했다.  
 
-1부터 시작해서 각 stage마다 만들어질 수 있는 수를 리스트에 추가했다.  
+1부터 시작해서 stage마다 만들어질 수 있는 수를 리스트에 추가했다.  
 
 > Stage 1
 
@@ -250,13 +250,13 @@ arr = [1, 2, 3, 4, 5, 6, 9, 10, 15, 25]
 
 not in 메서드는 O(n)의 시간이,  
 
-while과 for까지 있으니까 큰 입력일 수록 시간이 매우 오래 걸린다.  
+while과 for까지 있으니까 큰 입력일수록 시간이 매우 오래 걸린다.  
 
 **부족한 점:**  
 
 풀이에선 재귀함수와 메모리제이션을 이용해서 풀었다.  
 
-다이나믹 문제를 풀 땐, 풀이를 점화식으로 만든 후 재귀 함수로 풀어야 겠다,,,  
+다이나믹 문제를 풀 땐, 풀이를 점화식으로 만든 후 재귀 함수로 풀어야겠다,,,  
 
 ---
 
@@ -278,9 +278,9 @@ while과 for까지 있으니까 큰 입력일 수록 시간이 매우 오래 걸
 
 총 시간 복잡도는 O(N log H)이다.  
 
-<br/>
+  
 
-> 만약, 매번 떡을 절단할 때마다 N개의 떡을 모두 절단 하는 게 아니라 이것 조차도 이진 탐색으로 푼다면..?  
+> 만약, 매번 떡을 절단할 때마다 N개의 떡을 모두 절단하는 게 아니라 이것조차도 이진 탐색으로 푼다면..?  
 
 우선 arr를 오름차순으로 정렬한다.  
 
@@ -323,7 +323,7 @@ sort 메서드는 O(N log N)의 시간 복잡도를 가지고,
 
 리스트 A는 오름차순으로, 리스트 B는 내림차순으로 정렬한다.  
 
-그 후, 처음 원소부터 차레대로 비교해서 B의 원소가 크다면 스왑!  
+그 후, 처음 원소부터 차례대로 비교해서 B의 원소가 크다면 스왑!  
 
 작다면, 그 이후 원소들도 작을 테니 break!
 
@@ -331,7 +331,7 @@ sort 메서드는 O(N log N)의 시간 복잡도를 가지고,
 
 **아이디어:**  
 
-수의 범위가 정해져 있어서 계수 정렬로도 풀 수 있지만, 파이썬 sorted에 key을 설정해서 간단하게 풀었다.  
+수의 범위가 정해져 있어서 계수 정렬로도 풀 수 있지만, 파이썬 sorted에 key를 설정해서 간단하게 풀었다.  
 
 (이름, 점수)를 묶어서 튜플 형태로 리스트에 저장하고 점수를 기준으로 정렬했다.  
 
@@ -366,7 +366,7 @@ bfs로 구멍이 뚫려 있는 부분을 한 번에 검사하는 방식으로 �
 
 풀이는 dfs로 구현되어 있는데, 코드가 훨씬 간결하다.  
 
-예외 처리는 빨리 하는 것이 깔끔하다.  
+예외 처리는 빨리하는 것이 깔끔하다.  
 
 ```pythpn
 # Good
@@ -440,7 +440,7 @@ ny = y + dy[0]
 
 **시간 복잡도:** O(N^2)  
 
-**아이디어:** 각 행마다 가장 작은 수를 뽑고, 그 중 가장 큰 수를 출력 
+**아이디어:** 각행마다 가장 작은 수를 뽑고, 그 중 가장 큰 수를 출력 
 
 - [큰 수의 법칙](thiscodingtest/3-2.py)  
 
@@ -456,22 +456,22 @@ ny = y + dy[0]
 
 ## 21-02-10
 
-- [BOJ 2805](https://www.acmicpc.net/problem/2805) **나무 자르기** <br/>
+- [BOJ 2805](https://www.acmicpc.net/problem/2805) **나무 자르기**   
 이진 탐색을 이용하면 쉽게 풀리는 문제였다.
 
 ---
 
 ## 20-12-10
 
-- [BOJ 2609](https://www.acmicpc.net/problem/2609) **최대공약수와 최소공배수** <br/>
+- [BOJ 2609](https://www.acmicpc.net/problem/2609) **최대공약수와 최소공배수**   
 
 ```python
 유클리드 호제법 사용하기
 ```
 
-- [BOJ 11050](https://www.acmicpc.net/problem/11050) **이항계수 1** <br/>
+- [BOJ 11050](https://www.acmicpc.net/problem/11050) **이항계수 1**   
 
-- [BOJ 11866](https://www.acmicpc.net/problem/11866) **요세푸스 문제 0** <br/>
+- [BOJ 11866](https://www.acmicpc.net/problem/11866) **요세푸스 문제 0**   
   `list`로 풀었다.  
   근데 보니까 `queue`를 써서 푸는 문제였다.
 
@@ -479,48 +479,48 @@ ny = y + dy[0]
 
 ## 20-11-24
 
-- [BOJ 3181](https://www.acmicpc.net/problem/3181) **줄임말 만들기** <br/>
+- [BOJ 3181](https://www.acmicpc.net/problem/3181) **줄임말 만들기**   
 
-- [BOJ 2839](https://www.acmicpc.net/problem/2839) **설탕배달** <br/>
+- [BOJ 2839](https://www.acmicpc.net/problem/2839) **설탕배달**   
 
-시간 오래 걸리는 알고리즘으로 풀었다. <Br/>
+시간 오래 걸리는 알고리즘으로 풀었다.   
 
 ```python
 다시 풀어볼 필요가 있다.
 ```
 
-- [BOJ 1546](https://www.acmicpc.net/problem/1546) **평균** <br/>
+- [BOJ 1546](https://www.acmicpc.net/problem/1546) **평균**   
 
-- [BOJ 1388](https://www.acmicpc.net/problem/1388) **바닥 장식** <br/>
+- [BOJ 1388](https://www.acmicpc.net/problem/1388) **바닥 장식**   
 
 ---
 
 ## 20-11-04
 
-- [BOJ 3449](https://www.acmicpc.net/problem/3449) **해밍거리** <br/>
+- [BOJ 3449](https://www.acmicpc.net/problem/3449) **해밍거리**   
 
-두 문자열을 비교하는 간단한 문제다. 이전에 배운 `zip` 함수를 이용했다. <br/>
+두 문자열을 비교하는 간단한 문제다. 이전에 배운 `zip` 함수를 이용했다.   
 
-- [BOJ 3183](https://www.acmicpc.net/problem/3183) **Dates** <br/>
+- [BOJ 3183](https://www.acmicpc.net/problem/3183) **Dates**   
 
-날짜와 관련된 간단한 문제다. 함수를 만들어 풀었다. <br/>
+날짜와 관련된 간단한 문제다. 함수를 만들어 풀었다.   
 
-- [BOJ 3059](https://www.acmicpc.net/problem/3059) **등장하지 않는 문자의 합** <br/>
+- [BOJ 3059](https://www.acmicpc.net/problem/3059) **등장하지 않는 문자의 합**   
 
-아스키코드 관련 문자열 문제다. 아스키코드 함수 `chr` 과 `ord` 를 알게 됐다.<br/>
+아스키코드 관련 문자열 문제다. 아스키코드 함수 `chr` 과 `ord` 를 알게 됐다.  
 
 ```python
 >>> ord('문자') : 아스키코드를 반환
 >>> chr('숫자') : 문자 반환
 ```
 
-- [BOJ 2966](https://www.acmicpc.net/problem/2966) **찍기** <br/>
+- [BOJ 2966](https://www.acmicpc.net/problem/2966) **찍기**   
 
-반복문으로 처리하기 위해 각각의 정보를 `dictionary`로 받았는데,,, 코드가 많이 복잡해졌다.🤣<br/>
-`dictionary`보단 `array` 위주로 문제 풀어야 겠다. <br/>
+반복문으로 처리하기 위해 각각의 정보를 `dictionary`로 받았는데,,, 코드가 많이 복잡해졌다.🤣  
+`dictionary`보단 `array` 위주로 문제 풀어야겠다.   
 [Clean Code](https://alpyrithm.tistory.com/125)
 
-- [BOJ 2857](https://www.acmicpc.net/problem/2857) **FBI** <br/>
+- [BOJ 2857](https://www.acmicpc.net/problem/2857) **FBI**   
 
 이 문제를 풀 때, 사용할 수 있는 함수는 `count` `find` 정도 같다. 물론, 난 사용하지 않았다.
 
@@ -534,9 +534,9 @@ ny = y + dy[0]
 33
 ```
 
-- [BOJ 1259](https://www.acmicpc.net/problem/1259) **팰린드롬수** <br/>
+- [BOJ 1259](https://www.acmicpc.net/problem/1259) **팰린드롬수**   
 
-문자열 슬라이싱을 사용하면 매우 간단하게 풀리는 문제였다.<br/>
+문자열 슬라이싱을 사용하면 매우 간단하게 풀리는 문제였다.  
 나는 문자열 슬라이싱에 낯설어서 어렵게 풀었다.
 
 ```python
@@ -549,21 +549,21 @@ olleH
 
 ## 20-11-03
 
-- [BOJ 1173](https://www.acmicpc.net/problem/1173) **운동** <br/>
+- [BOJ 1173](https://www.acmicpc.net/problem/1173) **운동**   
 
-문제를 잘 읽어야 겠다. 진짜로... <br/>
-간단하게 조건문과 반복문으로 풀리는 문제였다. <br/>
+문제를 잘 읽어야겠다. 진짜로...   
+간단하게 조건문과 반복문으로 풀리는 문제였다.   
 
-- [BOJ 1193](https://www.acmicpc.net/problem/1193) **분수찾기** <br/>
+- [BOJ 1193](https://www.acmicpc.net/problem/1193) **분수찾기**   
 
-- [BOJ 1225](https://www.acmicpc.net/problem/1225) **이상한곱셈** <br/>
+- [BOJ 1225](https://www.acmicpc.net/problem/1225) **이상한곱셈**   
 
-입력 받는 수가 최대 10000자리다. 그래서 중첩 반복문을 사용하면 100000000 번의 연산을 해야 하기 때문에 시간초과가 발생한다.<br/>
-시간초과를 처음 느껴본 문제이다. 앞으로 런타임도 고려해야 겠다. <br/>
+입력받는 수가 최대 10000자리다. 그래서 중첩 반복문을 사용하면 100000000 번의 연산을 해야 하므로 시간초과가 발생한다.  
+시간초과를 처음 느껴본 문제이다. 앞으로 런타임도 고려해야겠다.   
 
-- [BOJ 1264](https://www.acmicpc.net/problem/1264) **모음의 개수** <br/>
+- [BOJ 1264](https://www.acmicpc.net/problem/1264) **모음의 개수**   
 
-쉽게 풀었다. 문자열에선 `count` 함수로 특정 문자열이 포함되었는지 확인할 수 있다. <br/>
+쉽게 풀었다. 문자열에선 `count` 함수로 특정 문자열이 포함되었는지 확인할 수 있다.   
 
 ```python
 >> a = 'BlockDMask'
@@ -575,14 +575,14 @@ olleH
 
 ## 20-11-02
 
-- [BOJ 1075](https://www.acmicpc.net/problem/1075) **나누기** <br/>
+- [BOJ 1075](https://www.acmicpc.net/problem/1075) **나누기**   
 
-나는 숫자로 처리했는데, 문자열로 처리하면 더 간단하게 풀 수 있다. <br/>
-문자열 처리가 간단해서 파이썬 쓴다는 말을 들은 것 같다. <br/>
+나는 숫자로 처리했는데, 문자열로 처리하면 더 간단하게 풀 수 있다.   
+문자열 처리가 간단해서 파이썬 쓴다는 말을 들은 것 같다.   
 
-- [BOJ 1193](https://www.acmicpc.net/problem/1193) **분수찾기** <br/>
+- [BOJ 1193](https://www.acmicpc.net/problem/1193) **분수찾기**   
 
-큰 배열에 압도되었지만, 규칙성을 찾으면 아주 쉽게 풀리는 문제다. <br/>
+큰 배열에 압도되었지만, 규칙성을 찾으면 아주 쉽게 풀리는 문제다.   
 
 ```python
 N = input()
@@ -598,11 +598,11 @@ while True:
 print(str(N)[-2:])
 ```
 
-- [BOJ 1076](https://www.acmicpc.net/problem/1076) **저항** <br/>
+- [BOJ 1076](https://www.acmicpc.net/problem/1076) **저항**   
 
-어렵게 풀었다는 생각이 많이 든다... 채점하는 데에 120초나 걸리다니..🤣<br/>
-`dictionary`로 데이터를 저장하고 풀었는데, 알고보니 데이터에 규칙이 있어서 `list` 하나로도 간단하게 풀 수 있다. <br/>
-아직 `python` 으로 문제푸는 스킬이 부족하단 생각이 많이 든다.<br/>
+어렵게 풀었다는 생각이 많이 든다... 채점하는 데에 120초나 걸리다니..🤣  
+`dictionary`로 데이터를 저장하고 풀었는데, 알고보니 데이터에 규칙이 있어서 `list` 하나로도 간단하게 풀 수 있다.   
+아직 `python` 으로 문제푸는 스킬이 부족하단 생각이 많이 든다.  
 
 ```python
 color = ['black', 'brown', 'red',
@@ -614,10 +614,10 @@ r = int(str(f) + str(s)) * (10 ** t)
 print(r)
 ```
 
-- [BOJ 1159](https://www.acmicpc.net/problem/1159) **농구경기** <br/>
+- [BOJ 1159](https://www.acmicpc.net/problem/1159) **농구경기**   
 
-문자열 슬라이싱으로 괜찮게 풀었다... 고 생각했지만, <br/>
-`counter` 라이브러리를 사용하면 쉽게 풀 수 있단 걸 알았다.😥 그래도 꽤 괜찮게 풀었다. <br/>
+문자열 슬라이싱으로 괜찮게 풀었다... 고 생각했지만,   
+`counter` 라이브러리를 사용하면 쉽게 풀 수 있단 걸 알았다.😥 그래도 꽤 괜찮게 풀었다.   
 
 ```python
 from collections import Counter
@@ -625,49 +625,49 @@ Counter('hello world')
 # Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
 ```
 
-- [BOJ 10757](https://www.acmicpc.net/problem/10757) **We love kriii** <br/>
+- [BOJ 10757](https://www.acmicpc.net/problem/10757) **We love kriii**   
 
-- [BOJ 10718](https://www.acmicpc.net/problem/10718) **큰 수 A+B** <br/>
+- [BOJ 10718](https://www.acmicpc.net/problem/10718) **큰 수 A+B**   
 
-- [BOJ 10869](https://www.acmicpc.net/problem/10869) **사칙연산** <br/>
+- [BOJ 10869](https://www.acmicpc.net/problem/10869) **사칙연산**   
 
-- [BOJ 10926](https://www.acmicpc.net/problem/10926) **사칙연산** <br/>
+- [BOJ 10926](https://www.acmicpc.net/problem/10926) **사칙연산**   
 
-- [BOJ 10998](https://www.acmicpc.net/problem/10998) **AxB** <br/>
+- [BOJ 10998](https://www.acmicpc.net/problem/10998) **AxB**   
 
 ---
 
 ## 20-11-01
 
-- [BOJ 10172](https://www.acmicpc.net/problem/10172) **개** <br/>
+- [BOJ 10172](https://www.acmicpc.net/problem/10172) **개**   
 
 `docstring`이라는 문법이 있다. 나중에 알아보도록 하자.
 
-- [BOJ 10430](https://www.acmicpc.net/problem/10430) **나머지** <br/>
+- [BOJ 10430](https://www.acmicpc.net/problem/10430) **나머지**   
 
-- [BOJ 10699](https://www.acmicpc.net/problem/10699) **오늘날짜** <br/>
+- [BOJ 10699](https://www.acmicpc.net/problem/10699) **오늘날짜**   
 
-`time` 라이브러리를 이용해서 풀었다. 지금은 공부하지 않아도 괜찮을 라이브러리라고 생각해서 넘긴다. <br/>
+`time` 라이브러리를 이용해서 풀었다. 지금은 공부하지 않아도 괜찮을 라이브러리라고 생각해서 넘긴다.   
 
-- [BOJ 1453](https://www.acmicpc.net/problem/1453) **피시방알바** <br/>
+- [BOJ 1453](https://www.acmicpc.net/problem/1453) **피시방알바**   
 
-C언어로 풀었다. 배열 크기를 101로 잡아줘야 한다. <br/>
+C언어로 풀었다. 배열 크기를 101로 잡아줘야 한다.   
 
 ---
 
 ## 20-10-30
 
-- [BOJ 3003](https://www.acmicpc.net/problem/3003) **킹, 퀸, 룩, 비숍, 나이트, 폰** <br/>
+- [BOJ 3003](https://www.acmicpc.net/problem/3003) **킹, 퀸, 룩, 비숍, 나이트, 폰**   
 
-절댓값을 적용해야 한다고 생각했지만, 아니었다.<br/>
-`list comprehension`에 리스트를 2개 넣어보려고 `zip` 내장함수를 사용해봤다.<br/>
-`zip`은 동일한 개수의 자료형을 묶어주는 역할을 하는 함수이다.<br/>
+절댓값을 적용해야 한다고 생각했지만, 아니었다.  
+`list comprehension`에 리스트를 2개 넣어보려고 `zip` 내장함수를 사용해봤다.  
+`zip`은 동일한 개수의 자료형을 묶어주는 역할을 하는 함수이다.  
 
-- [BOJ 3046](https://www.acmicpc.net/problem/3046) **R2** <br/>
+- [BOJ 3046](https://www.acmicpc.net/problem/3046) **R2**   
 
-- [BOJ 5337](https://www.acmicpc.net/problem/5337) **웰컴** <br/>
+- [BOJ 5337](https://www.acmicpc.net/problem/5337) **웰컴**   
 
-여러 줄에 걸쳐 출력할 수 있다는 걸 첨 알았다. <br/>
+여러 줄에 걸쳐 출력할 수 있다는 걸 첨 알았다.   
 
 ```python
 print(""".  .   .
@@ -675,59 +675,59 @@ print(""".  .   .
 |/\|(/.|(_.(_)[ | )(/.""")
 ```
 
-- [BOJ 5338](https://www.acmicpc.net/problem/5338) **마이크로소프트 로고** <br/>
+- [BOJ 5338](https://www.acmicpc.net/problem/5338) **마이크로소프트 로고**   
 
-- [BOJ 5339](https://www.acmicpc.net/problem/5339) **콜센터** <br/>
+- [BOJ 5339](https://www.acmicpc.net/problem/5339) **콜센터**   
 
-- [BOJ 5522](https://www.acmicpc.net/problem/5522) **카드게임** <br/>
+- [BOJ 5522](https://www.acmicpc.net/problem/5522) **카드게임**   
 
-리스트를 선언해서 풀었는데, 간단하게 변수 하나에 `input`을 더해주는 방식으로도 풀 수 있다. <br/>
+리스트를 선언해서 풀었는데, 간단하게 변수 하나에 `input`을 더해주는 방식으로도 풀 수 있다.   
 
-- [BOJ 5554](https://www.acmicpc.net/problem/5554) **심부름 가는 길** <br/>
+- [BOJ 5554](https://www.acmicpc.net/problem/5554) **심부름 가는 길**   
 
-- [BOJ 6749](https://www.acmicpc.net/problem/6749) **Next in line** <br/>
+- [BOJ 6749](https://www.acmicpc.net/problem/6749) **Next in line**   
 
-- [BOJ 7287](https://www.acmicpc.net/problem/7287) **등록** <br/>
+- [BOJ 7287](https://www.acmicpc.net/problem/7287) **등록**   
 
-- [BOJ 8370](https://www.acmicpc.net/problem/8370) **Plane** <br/>
+- [BOJ 8370](https://www.acmicpc.net/problem/8370) **Plane**   
 
-- [BOJ 8393](https://www.acmicpc.net/problem/8393) **합** <br/>
+- [BOJ 8393](https://www.acmicpc.net/problem/8393) **합**   
 
-- [BOJ 8437](https://www.acmicpc.net/problem/8437) **julka** <br/>
+- [BOJ 8437](https://www.acmicpc.net/problem/8437) **julka**   
 
-- [BOJ 9654](https://www.acmicpc.net/problem/9654) **나무함대 데이터** <br/>
+- [BOJ 9654](https://www.acmicpc.net/problem/9654) **나무함대 데이터**   
 
-`format`과 함께 출력 형식을 제한한 하는 코드를 써봤다.<br/>
+`format`과 함께 출력 형식을 제한한 하는 코드를 써봤다.  
 
 ```python
 >> print('Python is [{:15}]'.format('good'))
 python is [good           ]
 ```
 
-- [BOJ 10170](https://www.acmicpc.net/problem/10170) **NFC West vs North** <br/>
-  출력 형식은 어차피 나중에 구글링하면 되니까.. 그냥 `print`문으로 간단하게 처리했다.<br/>
+- [BOJ 10170](https://www.acmicpc.net/problem/10170) **NFC West vs North**   
+  출력 형식은 어차피 나중에 구글링하면 되니까.. 그냥 `print`문으로 간단하게 처리했다.  
 
-- [BOJ 10171](https://www.acmicpc.net/problem/10171) **고양이** <br/>
+- [BOJ 10171](https://www.acmicpc.net/problem/10171) **고양이**   
 
 ---
 
 ## 20-10-29
 
-- [BOJ 1550](https://www.acmicpc.net/problem/1550) **16진수** <br/>
+- [BOJ 1550](https://www.acmicpc.net/problem/1550) **16진수**   
 
-아직도 어떤 문제인지 모르겠다. <br/>
-다른 분 코드를 보니 한 줄로 처리되는데, 그걸 보고도 문제 파악이 안된다. <br/>
-그래도 `int` 함수의 인자로 진법 변환할 수 있단 걸 알았다. <br/>
+아직도 어떤 문제인지 모르겠다.   
+다른 분 코드를 보니 한 줄로 처리되는데, 그걸 보고도 문제 파악이 안된다.   
+그래도 `int` 함수의 인자로 진법 변환할 수 있단 걸 알았다.   
 
 ```python
 # int를 이용한 진법 변환
 print(int(input(), 16))
 ```
 
-- [BOJ 2338](https://www.acmicpc.net/problem/2338) **긴자리계산** <br/>
+- [BOJ 2338](https://www.acmicpc.net/problem/2338) **긴자리계산**   
 
-단순 계산 문제이다. <br/>
-새로 배운 건, `print` 함수의 두번째 인자로 `sep='\n'`를 주면, 각 줄에 개행을 넣을 수 있다는 것이다.<br/>
+단순 계산 문제이다.   
+새로 배운 건, `print` 함수의 두번째 인자로 `sep='\n'`를 주면, 각 줄에 개행을 넣을 수 있다는 것이다.  
 
 ```python
 >> print(1, 2, sep='\n')
@@ -735,20 +735,20 @@ print(int(input(), 16))
 2
 ```
 
-- [BOJ 2475](https://www.acmicpc.net/problem/2475) **검증수** <br/>
+- [BOJ 2475](https://www.acmicpc.net/problem/2475) **검증수**   
 
-아주 간단한 문제이다. <br/>
-`map` 함수로 `input`을 받고, `list comprehension` 문법으로 제곱수 배열을 새로 만들었다.<br/>
+아주 간단한 문제이다.   
+`map` 함수로 `input`을 받고, `list comprehension` 문법으로 제곱수 배열을 새로 만들었다.  
 
-- [BOJ 2557](https://www.acmicpc.net/problem/2557) **Hello World** <br/>
+- [BOJ 2557](https://www.acmicpc.net/problem/2557) **Hello World**   
 
-- [BOJ 2558](https://www.acmicpc.net/problem/2558) **A+B-2** <br/>
+- [BOJ 2558](https://www.acmicpc.net/problem/2558) **A+B-2**   
 
-- [BOJ 2845](https://www.acmicpc.net/problem/2845) **파티가끝나고난뒤에** <br/>
+- [BOJ 2845](https://www.acmicpc.net/problem/2845) **파티가끝나고난뒤에**   
 
-간단한 문제이다. `map`과 `list comprehension`에 익숙해지기 위해 사용해서 풀어봤다.<br/>
+간단한 문제이다. `map`과 `list comprehension`에 익숙해지기 위해 사용해서 풀어봤다.  
 
-- [BOJ 2914](https://www.acmicpc.net/problem/2914) **저작권** <br/>
+- [BOJ 2914](https://www.acmicpc.net/problem/2914) **저작권**   
 
 `math` 라이브러리를 `import`해서 `ceil`이라는 올림 함수를 사용해봤다.
 
@@ -756,10 +756,10 @@ print(int(input(), 16))
 
 ## 20-10-28
 
-- [BOJ 1000](https://www.acmicpc.net/problem/1000) **덧셈** <br/>
+- [BOJ 1000](https://www.acmicpc.net/problem/1000) **덧셈**   
 
-아주 간단한 문제지만, 한 줄에 숫자 여러개 받는 방법을 몰랐다. <br/>
-`split()` 함수를 이용하면 `()` 사이에 값을 구분자로 하여 문자열로 나누어 준다. <br/>
+아주 간단한 문제지만, 한 줄에 숫자 여러개 받는 방법을 몰랐다.   
+`split()` 함수를 이용하면 `()` 사이에 값을 구분자로 하여 문자열로 나누어 준다.   
 
 ```python
 # split 함수 예시
@@ -768,14 +768,14 @@ print(int(input(), 16))
 ['Life', 'is', 'too', 'short']
 ```
 
-- [BOJ 1001](https://www.acmicpc.net/problem/1001) **뺄셈** <br/>
+- [BOJ 1001](https://www.acmicpc.net/problem/1001) **뺄셈**   
 
 [BOJ 1000](https://www.acmicpc.net/problem/1000) 와 동일한 문제지만 `int()`로 바로 감싸서 풀었다.
 
-- [BOJ 1271](https://www.acmicpc.net/problem/1271) **엄청난 부자2** <br/>
+- [BOJ 1271](https://www.acmicpc.net/problem/1271) **엄청난 부자2**   
 
-몫과 나머지의 연산자만 사용하면 아주 간단한 문제였다. <br/>
-다른 분의 코드를 보니, `map()`함수를 사용하면 더 간단하게 숫자를 받을 수 있단 걸 알았다. <br/>
+몫과 나머지의 연산자만 사용하면 아주 간단한 문제였다.   
+다른 분의 코드를 보니, `map()`함수를 사용하면 더 간단하게 숫자를 받을 수 있단 걸 알았다.   
 
 ```python
 # map을 이용한 숫자 입력 예제
