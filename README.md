@@ -27,6 +27,14 @@
 
 ---
 
+## 21-05-09
+
+- [BOJ 11052](https://www.acmicpc.net/problem/11052) **카드 구매하기**
+
+기본적인 DP 예제와 같은 문제다!  
+
+---
+
 ## 21-05-08
 
 - [BOJ 7576](https://www.acmicpc.net/problem/7576) **토마토**
