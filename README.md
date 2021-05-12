@@ -27,6 +27,14 @@
 
 ---
 
+## 21-05-12
+
+- [BOJ 1753](https://www.acmicpc.net/problem/1753) **최단경로**
+
+다익스트라 문제다. 기초 다익스트라 구현을 요구한다.  
+
+---
+
 ## 21-05-11
 
 - [BOJ 1802](https://www.acmicpc.net/problem/1802) **종이 접기**
