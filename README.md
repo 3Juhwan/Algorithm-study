@@ -27,6 +27,16 @@
 
 ---
 
+## 21-05-14
+
+- [BOJ 2331](https://www.acmicpc.net/problem/2331) **반복수열**
+
+- [BOJ 11724](https://www.acmicpc.net/problem/11724) **연결 요소의 개수**
+
+dfs/bfs 기본 예제이다. 너무 오랜만이라 그런가,,, 푸는데 시간 좀 걸렸다.  
+
+---
+
 ## 21-05-12
 
 - [BOJ 1753](https://www.acmicpc.net/problem/1753) **최단경로**
