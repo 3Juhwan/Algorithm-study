@@ -67,7 +67,7 @@ def bfs_bridge(i, j, num):
                 heapq.heappush(queue, (now + 1, nx, ny))
             else:
                 result = min(result, now)
-    return result
+                return result
 
     
 # Run build bridge
