@@ -34,6 +34,16 @@
 
 ---
 
+## 21-06-01
+    
+- [BOJ 14503](https://www.acmicpc.net/problem/14503) **로봇 청소기**
+
+아래 블로그에 풀이 과정을 정리했습니다.  
+
+[BOJ 14503 풀이](https://3juhwan.tistory.com/3)
+
+---
+
 ## 21-05-28
     
 - [BOJ 2146](https://www.acmicpc.net/problem/2146) **다리 만들기**
