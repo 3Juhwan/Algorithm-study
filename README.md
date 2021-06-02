@@ -37,6 +37,16 @@
 
 ---
 
+## 21-06-02
+    
+- [BOJ 16236](https://www.acmicpc.net/problem/16236) **아기 상어**
+
+아래 블로그에 풀이 과정을 정리했습니다.  
+
+[BOJ 16236 풀이](https://3juhwan.tistory.com/5)
+
+---
+
 ## 21-06-01
     
 - [BOJ 14503](https://www.acmicpc.net/problem/14503) **로봇 청소기**
