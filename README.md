@@ -37,6 +37,16 @@
 
 ---
 
+## 21-06-12
+    
+- [BOJ 14890](https://www.acmicpc.net/problem/14890) **경사로**
+
+아래 블로그에 풀이 과정을 정리했습니다.  
+
+[BOJ 14890 풀이](https://3juhwan.tistory.com/8)
+
+---
+
 ## 21-06-04
     
 - [BOJ 1826](https://www.acmicpc.net/problem/1826) **연료 채우기**
