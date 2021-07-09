@@ -1,18 +1,15 @@
-class Node(object):
-    def __init__(self):
-        self.children = {}
-        
 class Tries:
     def __init__(self):
-        self.head = Node()
+        self.head = {}
         
     def insert(self, arr):
         curr_node = self.head
         
         for string in arr:
-            if string not in curr_node.children:
-                curr_node.children[string] = Node()
-            curr_node = curr_node.children[string]
+            if string not in curr_node:
+                curr_node[string] = {}
+            curr_node = curr_node[string]
+        curr_node['End'] = True
         
     def printStruct(self, node, length):
         if length == 0: curr_node = self.head
