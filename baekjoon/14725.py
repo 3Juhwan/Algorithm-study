@@ -9,26 +9,21 @@ class Tries:
             if string not in curr_node:
                 curr_node[string] = {}
             curr_node = curr_node[string]
-        curr_node['End'] = True
+        curr_node['End'] = {}
         
     def printStruct(self, node, length):
-        if length == 0: curr_node = self.head
-        else: curr_node = node
-        
-        for string in sorted(curr_node.children):
-            # print(string)
-            # if not curr_node.children:
-            print("--" * length, end='')
-            print(string)
-            if curr_node.children[string]:
-                self.printStruct(curr_node.children[string], length + 1)
+        curr_node = self.head if length == 0 else node
+
+        for string in sorted(curr_node):
+            if string == 'End': continue
+            print("--" * length + string)
+            if curr_node[string]:
+                self.printStruct(curr_node[string], length + 1)
 
 n = int(input())
 trie = Tries()
 for _ in range(n):
-    _input = list(input().split())
-    k = int(_input[0])
-    arr = _input[1:]
+    arr = list(input().split())[1:]
     trie.insert(arr)
 
 trie.printStruct(None, 0)
