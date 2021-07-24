@@ -1,6 +1,5 @@
 from itertools import combinations
 from collections import deque
-from copy import deepcopy
 import sys
 
 input = sys.stdin.readline
@@ -17,29 +16,24 @@ for i in range(n):
         elif graph[i][j] == 2: infect.append((i, j))
             
 full = len(sites) + len(infect) - 3
-
 sites = list(combinations(sites, 3))
 
 dfdf = 0
 for site in sites:
     # 벽 세운 맵 만들기
-    g = deepcopy(graph)
-    for s in site:
-        x, y = s
-        g[x][y] = 1
+    g = [a[:] for a in graph]
+    for x, y in site: g[x][y] = 1
 
-    visited = [[0] * m for _ in range(n)]
     result = len(infect)
 
     # 감염
     q = deque(infect)
     while q:
-        x, y = q.popleft()    # 첫번째는 visited 체크를 못함
+        x, y = q.popleft()
 
         for i in range(4):
             nx, ny = x + dx[i], y + dy[i]
-            if 0 <= nx < n and 0 <= ny < m and not visited[nx][ny] and g[nx][ny] == 0:
-                visited[nx][ny] = 1
+            if 0 <= nx < n and 0 <= ny < m and g[nx][ny] == 0:
                 g[nx][ny] = 2
                 q.append((nx, ny))
                 result += 1
