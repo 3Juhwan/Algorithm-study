@@ -1,0 +1,5 @@
+n = int(input())
+numbers = list(input().split())
+numbers.sort(key=lambda x: x*9, reverse=True)
+result = ''.join(numbers)
+print(result if int(result) else 0)
