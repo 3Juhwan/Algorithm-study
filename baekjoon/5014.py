@@ -1,23 +1,25 @@
-import heapq
+from collections import deque
 import sys
 input = sys.stdin.readline
-INF = int(1e9)
+
+def bfs(S):
+    visited = [0] * (F + 1)
+    q = deque([(0, S)])
+
+    while q:
+        cnt, now = q.popleft()
+        if now == G:
+            return cnt
+
+        floors = [now + U, now - D]
+        for i in floors:
+            if 0 < i <= F and not visited[i]:
+                visited[i] = 1
+                q.append((cnt + 1, i))
+
+    return -1
+
+
 F, S, G, U, D = map(int, input().split())
-
-floor = [INF] * (F + 1)
-floor[S] = 0
-
-q = []
-heapq.heappush(q, (0, S))
-
-while q:
-    digit, now = heapq.heappop(q)
-    upward, downward = now + U, now - D
-    if upward <= F and floor[upward] > digit + 1:
-        floor[upward] = digit + 1
-        heapq.heappush(q, (digit + 1, upward))
-    if downward > 0 and floor[downward] > digit + 1:
-        floor[downward] = digit + 1
-        heapq.heappush(q, (digit + 1, downward))
-    
-print(floor[G] if floor[G] < INF else "use the stairs")
+answer = bfs(S)
+print(answer if not answer == -1 else "use the stairs")
