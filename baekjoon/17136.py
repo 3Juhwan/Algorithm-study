@@ -5,7 +5,6 @@ board = [list(map(int, input().split())) for __ in range(10)]
 paper = [0]*6
 visited = [[[0]*55555 for __ in range(10)] for __ in range(10)]
 
-
 def getNext(board, x, y):
     while x < 10 and y < 10:
         if board[x][y]:
@@ -23,9 +22,9 @@ def isCover(board, size, x, y):
                 return 0
     for i in range(size):
         for j in range(size):
-            board[x+i][y+j] = 0
+            board[x+i][y+j] = 0    
     return 1
-
+    
 
 def answer(board, x, y):
     global result
@@ -36,27 +35,24 @@ def answer(board, x, y):
     if sum(paper) >= result:
         return
 
-    if board[x][y]:
-        for i in range(1, 6):
-            if paper[i] == 5:
-                continue
-            if isCover(board, i, x, y):
-                paper[i] += 1
-                nx, ny = getNext(board, x, y)
-                tmp = int(''.join([str(q) for q in paper]))
-                if not visited[x][y][tmp]:
-                    visited[x][y][tmp] = 1
-                    answer(board, nx, ny)
-                for q in range(i):
-                    for w in range(i):
-                        board[x+q][y+w] = 1
-                paper[i] -= 1
-    else:
-        nx, ny = getNext(board, x, y)
-        answer(board, nx, ny)
+    for i in range(1, 6):
+        if paper[i] == 5:
+            continue
+        if isCover(board, i, x, y):
+            paper[i] += 1
+            nx, ny = getNext(board, x, y)
+            tmp = int(''.join([str(q) for q in paper]))
+            if not visited[x][y][tmp]:
+                visited[x][y][tmp] = 1
+                answer(board, nx, ny)
+            for q in range(i):
+                for w in range(i):
+                    board[x+q][y+w] = 1   
+            paper[i] -= 1
     return
 
-
+    
 result = 101
-answer(board, 0, 0)
+x, y = getNext(board, 0, 0)
+answer(board, x, y)
 print(result if result != 101 else -1)
